@@ -89,10 +89,9 @@ class Translator {
         }
         //check for singles
         var bta = words.map(item => this.singles(item, britishOnly));
-        //add last character back in
+        //(re) join & add last character back in
         bta = bta.join(" ") + end
-        //(re)captialize first word and return
-        // bta = bta.charAt(0).toUpperCase() + bta.slice(1)
+        
         return bta;
     }
 }

@@ -45,7 +45,7 @@ module.exports = function (app) {
         res.json({"text": text, "translation": "Everything looks good to me!" })
       }else{
       
-        // The returned object should contain the submitted 
+      // The returned object should contain the submitted 
       // text and translation with the translated text.
       
       res.json({ "text": text, "translation": translation });
